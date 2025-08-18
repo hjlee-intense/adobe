@@ -928,8 +928,13 @@ footer div a:first-child::before{
     width: 500px;
     padding: 50px 40px;
   }
-
+  #example .modal-cont > div .close {
+    position: absolute;
+    top:25px;
+    right:26px;
+  }
   .modal-pop .modal-cont > div .close {
+    background:url(../image/pop_close2.png) no-repeat;
     top: -56px;
     width: 26px;
     height: 26px;
