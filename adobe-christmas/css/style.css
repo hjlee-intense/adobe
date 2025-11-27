@@ -62,29 +62,6 @@
   font-style: normal;
   font-weight: 400;
 }
-/* .sandoll-regular-white-14px {
-  color: var(--color-white);
-  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 400;
-}
-
- */
-
-/* .sandoll-regular-white-14px-2 {
-  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 400;
-}
-.sandoll-regular-negroni-14px {
-  color: var(--negroni);
-  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 400;
-} */
 
 .paperlogy-bold-caribbean-green-pearl-48px {
   color: var(--color-green);
@@ -984,9 +961,9 @@ input, select {
   position: absolute;
   top: 0.266666vw;
   left: 50%;
-  width: 24.5%;
+  width: 30%;
   height: auto;
-  aspect-ratio: 92 / 26;
+  aspect-ratio: 116 / 32;
   transform: translate(-50%, calc(-100% + 2px));  
 }
 .adobe-christmas .section4 .rectangle-title {
@@ -1197,7 +1174,7 @@ input, select {
 
 
 }
-.adobe-christmas .section1 .left,
+/* .adobe-christmas .section1 .left,
 .adobe-christmas .section1 .right {
   aspect-ratio: 2.13;
   width:18%;
@@ -1229,13 +1206,11 @@ input, select {
   display:flex;
   align-items: center;
   justify-content: center;
-  /* justify-self: center; */
-
-
-  
-
+} */
+.section1 .kakao-btn {
+  width:73.33vw;
+  aspect-ratio: 286 / 39;
 }
-
 
 
 
@@ -2245,6 +2220,10 @@ input, select {
 
 @media (min-width: 750px) {
 
+  .section1 .kakao-btn {
+    width:572px;
+    aspect-ratio: 286 / 39;
+  }
   .adobe-christmas .section2 {
     margin-top:30px;
     margin-bottom: 76px;
