@@ -27,6 +27,8 @@ const modalOpen = (name) => {
     layerScrollOff();
   }
   modalPop.classList.remove("hide");
+  $('#embedim--snow').hide();
+
 };
 
 // modal close
@@ -44,6 +46,7 @@ const modalClose = (name, termChk) => {
   }
   
   modalPop.classList.add("hide");
+  $('#embedim--snow').show();
 };
 
 termCheck.forEach((item, index) => {

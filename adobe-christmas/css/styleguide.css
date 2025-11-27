@@ -769,6 +769,9 @@ label + input[type="file"] {
     font-size: var(--font-size-12);
     font-weight: 400;    
   }
-  
+ 
+  #embedim--snow.hide {
+    display: none;
+  }
   
 }
