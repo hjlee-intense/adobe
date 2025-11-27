@@ -1,0 +1,145 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  src: url(../fonts/Pretendard-ExtraLight.woff) format("woff"),
+    url(../fonts/Pretendard-ExtraLight.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  src: url(../fonts/Pretendard-Light.woff) format("woff"),
+    url(../fonts/Pretendard-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  src: url(../fonts/Pretendard-Regular.woff) format("woff"),
+    url(../fonts/Pretendard-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  src: url(../fonts/Pretendard-Medium.woff) format("woff"),
+    url(../fonts/Pretendard-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard-7Bold";
+  font-weight: 700;
+  src: url(../fonts/Pretendard-Bold.woff) format("woff"),
+    url(../fonts/Pretendard-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  src: url(../fonts/Pretendard-ExtraBold.woff) format("woff"),
+    url(../fonts/Pretendard-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  src: url(../fonts/Pretendard-Black.woff) format("woff"),
+    url(../fonts/Pretendard-Black.woff2) format("woff2");
+}
+
+
+/* Paperlogy */
+@font-face {
+  font-family: "Paperlogy-7Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Paperlogy-7Bold.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy-6SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Paperlogy-6SemiBold.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy-5Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Paperlogy-5Medium.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy-4Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Paperlogy-4Regular.woff2") format("truetype");
+}
+@font-face {
+  font-family: "Paperlogy-3Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Paperlogy-3Light.woff2") format("truetype");
+}
+
+
+@font-face {
+  font-family: "AdobeCleanHanK";
+  font-weight: 200;
+  src: url(../fonts/AdobeCleanHanK-ExtraLight.woff) format("woff");
+}
+
+@font-face {
+  font-family: "AdobeCleanHanK-Light";
+  font-weight: 350;
+  src: url(../fonts/AdobeCleanHanK-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "AdobeCleanHanK-Normal";
+  font-weight: 400;
+  src: url(../fonts/AdobeCleanHanK-Normal.woff) format("woff");
+}
+
+@font-face {
+  font-family: "AdobeCleanHanK";
+  font-weight: 500;
+  src: url(../fonts/AdobeCleanHanK-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "AdobeCleanHanK-Bold";
+  font-weight: 700;  
+  src: url(../fonts/AdobeCleanHanK-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "AdobeCleanHanK";
+  font-weight: 800;
+  src: url(../fonts/AdobeCleanHanK-ExtraBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "AdobeCleanHanK";
+  font-weight: 900;
+  src: url(../fonts/AdobeCleanHanK-Black.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Jalnan Gothic";
+  font-weight: 400;
+  src: url(../fonts/JalnanGothicTTF.ttf) format("truetype"),
+   url("../font/JalnanGothic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Jalnan Gothic";
+  font-weight: 700;
+  src: url(../fonts/JalnanGothicTTF.ttf) format("truetype"),
+   url("../font/JalnanGothic.otf") format("opentype");
+}
+
+
+
+
