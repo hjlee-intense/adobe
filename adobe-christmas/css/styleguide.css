@@ -279,6 +279,7 @@ button {
   line-height:143.75%;
   letter-spacing: -0.64px;
   margin-top:2.66vw;
+  z-index:9999;
 }
 .modal-pop.modal-cont-stage .modal-cont .cont1 .tit-stage {
   font-family: var(--font-family-paperlogy-7bold);
@@ -319,7 +320,7 @@ button {
   gap:12px;
   min-height:26px;
   padding:0 30px;
-
+  background-color:#fff;
 }
 .modal-pop.modal-cont-stage .step {
   font-family:var(--font-family-paperlogy-6semibold);
@@ -355,8 +356,7 @@ button {
 }
 
   #terms-view1 .terms-box,
-  #terms-view2 .terms-box {
-    height: 74.6667vw;    
+  #terms-view2 .terms-box {    
     margin-top: 5.3333vw;
     padding: 1.3333vw;
     border-radius: var(--clamp-10px);
@@ -379,9 +379,10 @@ button {
     line-height:120%;
   }
 
-  #terms-view1 .terms-box > div span,
-  #terms-view2 .terms-box > div span {
+  #terms-view1 .terms-box > div a,
+  #terms-view2 .terms-box > div a {
     text-decoration: underline;
+    cursor: pointer;
   }
 
   #terms-view1 .terms-box > div span a,
@@ -736,6 +737,7 @@ label + input[type="file"] {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    background-color:#fff;
   }
   .modal-pop.modal-cont-stage .modal-cont .cont1 {
     border-top-left-radius: 100px;
@@ -772,6 +774,27 @@ label + input[type="file"] {
  
   #embedim--snow.hide {
     display: none;
+  }
+
+  .modal-pop {
+    transform: scale(70%);
+    transform-origin: top center;
+    
+  }  
+  .modal-pop .modal-cont {    
+    height: calc(100vh * 1.25) ;    
+    top:8vw;
+  }
+  .modal-pop.modal-cont-detail .modal-cont  {
+    height: calc(100vh * 1.35);  
+  }  
+  #stage1, #stage2, #stage3,
+  #confirm, #complete {
+    height: calc(100vh * 1.43);  
+  }
+  .modal-pop .btn-close {
+    top: 8vw;
+    right: 2vw;
   }
   
 }

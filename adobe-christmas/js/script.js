@@ -102,4 +102,4 @@ $('#stage2 .choices li').on('click', function() {
 
 
 
-// modalOpen('confirm');
+// modalOpen('complete');
