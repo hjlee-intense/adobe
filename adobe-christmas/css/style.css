@@ -2195,6 +2195,7 @@ input, select {
   display:flex;
   justify-content: center;
   align-items: center;
+  line-height: 150%;
 }
 #confirm .btn-area .btn {
   position: absolute;
