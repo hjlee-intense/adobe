@@ -46,6 +46,22 @@ const modalClose = (name, termChk) => {
   modalPop.classList.add("hide");
 };
 
+termCheck.forEach((item, index) => {
+  item.addEventListener("click", (event) => {
+    event.preventDefault();
+    let checkBox = event.target.previousElementSibling;
+    if(checkBox.checked) {
+      checkBox.checked = false;
+    } else {
+      if (index === 0) {
+        modalOpen('terms-view1');
+      } else {
+        modalOpen('terms-view2');
+      }
+    }
+  })
+});
+
 
 // 크리스마스 트리 아이템 클릭
 $('.div-tree .item, .div-tree .click').on('click', function() {
@@ -81,3 +97,6 @@ $('#stage2 .choices li').on('click', function() {
   $(this).addClass('on');
 });
 
+
+
+//modalOpen('confirm');

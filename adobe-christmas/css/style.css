@@ -812,8 +812,8 @@ input, select {
 }
 
 .adobe-christmas .section2 {
-  margin-top:10px;
-  margin-bottom: 38px;
+  margin-top:4vw;
+  margin-bottom: 10.13vw;
   color:#fff;
   text-align:center;
   display:flex;
@@ -854,6 +854,10 @@ input, select {
   display:flex;
   justify-content: center;
 }
+.adobe-christmas .section2 .text-2 .space { 
+  width:var(--clamp-10px);
+ }
+
 
 .adobe-christmas .section2 .text-3 {
   font-family: var(--font-family-paperlogy-7bold);
@@ -2009,7 +2013,7 @@ input, select {
 }
 
 .adobe-christmas-game .frame-1 {
-  background-color: var(--color-green);
+  background-color:#E2E2E2;
   border-radius: 35px;
   display: flex;
   /* height: 60px; */
@@ -2020,6 +2024,10 @@ input, select {
   margin-bottom:var(--clamp-10px);
   width:89.33%;
   border-radius: 9999px;;
+}
+.adobe-christmas-game .frame-1.on {
+  background-color: var(--color-green);
+
 }
 .adobe-christmas-game .section4 {
   position: relative;
@@ -2192,7 +2200,41 @@ input, select {
   opacity: 0.6;
 }
 
+#confirm {  
+  font-family: var(--font-family-paperlogy-7bold) ;
+  font-size: var(--font-size-25);
+  line-height: 80%;
+  letter-spacing: -0.5px;  
+
+}
+
+#confirm.modal-pop .modal-cont {
+  width: clamp(335px, 89.33vw,  670px);
+  height:unset;
+  aspect-ratio: 335 / 271;
+  top:50%;
+  transform: translateY(-50%);
+}
+#confirm .cont1 {
+  height:calc(100% - var(--clamp-60px));
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#confirm .btn-area .btn {
+  position: absolute;
+  width:77.6%;
+  left:50%;
+  transform: translateX(-50%);
+  bottom:var(--clamp-25px);
+}
+
 @media (min-width: 750px) {
+
+  .adobe-christmas .section2 {
+    margin-top:30px;
+    margin-bottom: 76px;
+  }
 
   .adobe-christmas .section1 {
     height:78px;
