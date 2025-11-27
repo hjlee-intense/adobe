@@ -223,6 +223,7 @@ button {
 }
 .modal-pop.modal-cont-stage .blue {
   color:var(--color-pop-blue);
+  text-decoration: none;
 }
 .modal-pop.modal-cont-stage .item-img {
   position: absolute;  
