@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
+    <meta property="og:title" content="Adobe Christmas EVENT">
+    <meta property="og:description" content="Adobe Firefly의 독보적인 기능으로 크리스마스 트리를 채우고 100% 선물 받아가세요!">
+    <meta property="og:url" content="https://event-adobe.com/kakao-friends/christmas/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="카카오프렌즈 체크인 이벤트">
+    <meta property="og:locale" content="ko_KR">
+    <title>Adobe | 크리스마스 트리 이벤트 </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />    
     <link rel="stylesheet" type="text/css" href="css/globals.css" />    
     <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
@@ -11,6 +17,46 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
     <script src="https://app.embed.im/snow.js" defer></script>
+
+    <script type='text/javascript'>
+
+    window.marketingtech = {
+    
+    adobe: {
+    
+    launch: {
+    
+    property: 'global',
+    
+    environment: 'production'
+    
+    },
+    
+    analytics: {
+    
+    additionalAccounts: '' // additional report suites to send data to "," separated Ex: 'RS1,RS2'
+    
+    },
+    
+    target: false, // if target needs to be enabled else false
+    
+    audienceManager: true // if audience manager needs to be enabled else false
+    
+    }
+    
+    };
+    //adobe.target.debug = true;
+    
+  //  <!-- loader 삭제 0623
+  //   document.addEventListener('at-content-rendering-succeeded', function () {
+  //     console.log("at-content-rendering-succeeded....");
+  //     document.body.style.background = 'none';
+  //   });
+  // -->
+  </script>
+  <!--Script-->
+  <script src="https://www.adobe.com/marketingtech/main.min.js"></script>
+
 </head>
 <body>
     <div class="adobe-christmas screen">
@@ -32,7 +78,7 @@
           <span class="span paperlogy-bold-green-42px">스</span>
           <span class="span paperlogy-bold-rose-42px">마</span>
           <span class="span paperlogy-bold-green-42px">스</span>
-          &nbsp;
+          <span class="apsn space"></span>
           <span class="span paperlogy-bold-rose-42px">트</span>
           <span class="span paperlogy-bold-green-42px">리</span>
           <span class="span-1">를</span>
@@ -545,7 +591,7 @@ https://event-adobe.com/kakao-friends/christmas/intro.html (“사이트”) 를
         </div>
 
         <div class="btn-area">
-          <button type="button" class="btn btn-green" onclick="modalOpen('modal1')">시작하기</button>
+          <button type="button" class="btn btn-green" onclick="">시작하기</button>
         </div>
 
 
@@ -577,7 +623,8 @@ https://event-adobe.com/kakao-friends/christmas/intro.html (“사이트”) 를
   
 
   <script src="./js/script.js"></script>
-  
+  <script src="essentialData.js"></script>
+  <script src="index.js"></script>
 
 </body>
 </html>
