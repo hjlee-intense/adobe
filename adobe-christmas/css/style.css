@@ -2186,7 +2186,7 @@ input, select {
 
 #confirm.modal-pop .modal-cont {
   width: clamp(335px, 89.33vw,  670px);
-  height:unset;
+  height: clamp(271px, 72.66vw, 542px);
   aspect-ratio: 335 / 271;
   top:50%;
   transform: translateY(-50%);
