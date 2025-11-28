@@ -364,6 +364,7 @@ button {
     font-size:var(--font-size-14);
     text-align: left;
     line-height:normal;
+    height:45vh;
   }
 
   #terms-view1 .terms-box > div,
@@ -527,7 +528,8 @@ button {
   width: 100%;
   height: var(--clamp-60px);
   margin-top: var(--clamp-5px);
-  padding-left: var(--clamp-5px);
+  /* padding-left: var(--clamp-10px); */
+  padding-left: clamp(7px, 1.8vw, 14px);
   border: 1px solid #ccc;
   border-radius: var(--clamp-10px);
   font-size: var(--clamp-16px);
@@ -784,14 +786,26 @@ label + input[type="file"] {
   .modal-pop .modal-cont {    
     height: calc(100vh * 1.25) ;    
     top:8vw;
-  }
+  }  
   .modal-pop.modal-cont-detail .modal-cont  {
     height: calc(100vh * 1.35);  
   }  
+  .modal-pop.term,
   #stage1, #stage2, #stage3,
   #confirm, #complete {
     height: calc(100vh * 1.43);  
   }
+
+  .modal-pop.term .modal-cont {
+    height:80vh;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  .modal-pop.term .btn-close {
+    top:30vh;
+    right:5vw;
+  }
+
   .modal-pop .btn-close {
     top: 8vw;
     right: 2vw;

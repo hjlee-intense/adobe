@@ -305,7 +305,7 @@
   background:url('../img/item2-icon.png') no-repeat;
   background-size:100% 100%;
   position: absolute;
-  right:8.33%;
+  right:2%;
   bottom:0;
   width:16.53%;
   aspect-ratio: 124 / 144
@@ -944,7 +944,7 @@ input, select {
   width: 337px; */
   position: relative;
   margin:0 auto;
-  margin-top:clamp(45px, 12vw, 90px);
+  padding-top:clamp(45px, 12vw, 90px);
   color:var(--color-white);
   background-color: var(--zuccini);
 }
