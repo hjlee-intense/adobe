@@ -62,9 +62,9 @@
 }
 
 @font-face {
-  font-family: "AdobeCleanHanK";
+  font-family: "AdobeCleanHanK-Normal";
   font-weight: 400;
-  src: url(../font/AdobeCleanHanK-Normal.woff) format("woff");
+  src: url(../font/AdobeCleanHanK-Normal.woff) format("woff");  
 }
 
 @font-face {

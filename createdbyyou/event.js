@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // document.querySelector('div#complete .close').onclick=function(){
     //     modalClose('complete');
     // }
-    document.querySelectorAll('div#complete button')[0].onclick=function(){
-        console.log("kakao 공유");
-        ShareObject.sendTemplate();
-        modalClose('complete');
-    }
-    document.querySelectorAll('div#complete button')[1].onclick=function(){
-        console.log("kakao 채널");
-        location.href ="http://pf.kakao.com/_xoVexis";
-    }
+    // document.querySelectorAll('div#complete button')[0].onclick=function(){
+    //     console.log("kakao 공유");
+    //     ShareObject.sendTemplate();
+    //     modalClose('complete');
+    // }
+    // document.querySelectorAll('div#complete button')[1].onclick=function(){
+    //     console.log("kakao 채널");
+    //     location.href ="http://pf.kakao.com/_xoVexis";
+    // }
     //AdobeAnalytics.init();
     EssentialData.init();
 

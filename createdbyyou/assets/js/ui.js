@@ -3,7 +3,7 @@ const selectFile = document.querySelector(".selectFile");
 const emailSelect = document.querySelector("#email-select");
 const emailDomain = document.querySelector(".email-domain");
 const moExample = document.querySelector("#moExample");
-const termCheck = document.querySelectorAll(".frm-check label");
+const termCheck = document.querySelectorAll(".terms-area .frm-check label");
 
 // file upload
 fileSelect.addEventListener("change", (event) => {
@@ -92,7 +92,10 @@ const modalClose = (name, termChk) => {
 };
 
 termCheck.forEach((item, index) => {
+
+  
   item.addEventListener("click", (event) => {
+    // console.log(item);
     event.preventDefault();
     let checkBox = event.target.previousElementSibling;
     if(checkBox.checked) {
@@ -136,3 +139,4 @@ function isMobile() {
 //     }, index * 500); // 500ms 간격 (파일 2개면 0ms, 500ms)
 //   });
 // }
+
