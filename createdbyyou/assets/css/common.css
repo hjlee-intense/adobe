@@ -1207,7 +1207,7 @@ footer div a:first-child::before{
     color: #000;
     font-weight: 350;
     letter-spacing: -0.9px;
-    text-align:left ;
+    text-align:center ;
   }
 
   #complete .btn {

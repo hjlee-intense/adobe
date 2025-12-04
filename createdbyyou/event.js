@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     });
     document.querySelector('div.btn-area button').onclick=function(){
-        const finishDate = new Date(2025, 9, 22, 23, 59, 59);
+        const finishDate = new Date(2026, 0, 21, 23, 59, 59);
         if(finishDate.getTime() > new Date().getTime()){
             let valid = Validation.checkValid();
             console.log("valid :"+ valid);
