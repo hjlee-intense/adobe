@@ -796,19 +796,29 @@ label + input[type="file"] {
     height: calc(100vh * 1.43);  
   }
 
+
+
   .modal-pop.term .modal-cont {
-    height:80vh;
-    top:50%;
+    /* height:80vh; */
+    top:52%;
     transform: translateY(-50%);
   }
-  .modal-pop.term .btn-close {
-    top:30vh;
-    right:5vw;
-  }
-
+  
   .modal-pop .btn-close {
     top: 8vw;
     right: 2vw;
+  }
+
+  .modal-pop.term .btn-close {
+    top:40px;
+    right:30px;
+    transform: unset;
+    width:50px;
+    height:50px;
+  }
+  #terms-view1 .terms-box,
+  #terms-view2 .terms-box {    
+    height:60vh;
   }
   
 }

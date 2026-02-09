@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //document.body.style.backgroundImage = "none";
     console.log("DOM이 준비되었습니다!");
     if(sessionStorage.getItem("emailDomain") == null || sessionStorage.getItem("emailId") == null){
-        location.replace("index.html");
+        // location.replace("index.html");
         return false;
     }
     userData.emailDomain = sessionStorage.getItem("emailDomain");
