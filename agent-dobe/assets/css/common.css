@@ -745,9 +745,20 @@ footer div a:first-child::before{
   color: #333;
   letter-spacing: -0.1867vw;
   overflow-y: auto;
-  white-space: pre-wrap;
-  word-break: break-all;
+  white-space: normal;
+  word-break: keep-all;
+  overflow: break-word;
 }
+
+#terms-view1 .terms-box span[onclick] {
+  cursor: pointer;
+}
+
+#terms-view2 .terms-box a{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 #terms-view1 .terms-box > div span,
 #terms-view2 .terms-box > div span {

@@ -5,28 +5,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no, address=no, email=no">
-  <meta property="og:title" content="어도비 Created by You 콘테스트">
-  <meta property="og:description" content="내 작품이 2026년 Adobe를 대표하는 광고가 됩니다.">
-  <meta property="og:image:alt" content="어도비 Created by You 콘테스트">
-  <meta property="og:url" content="https://event-adobe.com/createdbyyou/index.html">
+  <meta property="og:title" content="눈 떠보니 어도비 요원?">
+  <meta property="og:description" content="미지의 공간에 갇힌 도비요원..미션을 수행하면 탈출기회와 특별한 선물까지 받을 수 있다는데...">
+  <meta property="og:image:alt" content="눈 떠보니 내가 어도비 요원?">
+  <meta property="og:url" content="https://event-adobe.com/kakao-friends/agent-dobe/yes.html">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="어도비 Created By You 콘테스트">
+  <meta property="og:site_name" content="눈 떠보니 내가 어도비 요원?">
+  <meta property="og:image" content="https://event-adobe.com/kakao-friends/assets/image/meta_agent_dobe.jpg">
   <meta property="og:locale" content="ko_KR">
-  <title>Adobe | 어도비 Created by You 콘테스트</title>
+  <title>Adobe | 눈 떠보니 내가 어도비 요원..?</title>
   <script type='text/javascript'>
 
-    window.marketingtech = {    
-      adobe: {    
-        launch: {    
-          property: 'global',    
-          environment: 'production'    
-        },    
-        analytics: {    
+    window.marketingtech = {
+      adobe: {
+        launch: {
+          property: 'global',
+          environment: 'production'
+        },
+        analytics: {
           additionalAccounts: '' // additional report suites to send data to "," separated Ex: 'RS1,RS2'    
-        },    
+        },
         target: false, // if target needs to be enabled else false    
         audienceManager: true // if audience manager needs to be enabled else false    
-      }    
+      }
     };
   </script>
   <!--Script-->
@@ -42,23 +43,26 @@
 <body>
   <div class="intro">
     <div class="video-container">
-      <video autoplay muted loop playsinline>
-          <source src="./assets/image/intro_20260209.mp4" type="video/mp4">
-          해당 브라우저는 비디오 태그를 지원하지 않습니다.
+      <video id="interactiveVideo" autoplay muted playsinline>
+        <source src="./assets/image/intro_20260209.mp4" type="video/mp4">
+        해당 브라우저는 비디오 태그를 지원하지 않습니다.
       </video>
     </div>
     <div class="btn-area">
-      <button type="button" onclick="location.href='index.html'" >지금 도전하기</span></button>
+      <button type="button" onclick="location.href='index.html'">지금 도전하기</span></button>
     </div>
-  </div>  
+  </div>
 
   <script src="./assets/js/ui.js"></script>
-  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.3/kakao.min.js" integrity="sha384-kLbo2SvoNtOFiniJ1EQ9o2iDA8i3xp+O6Cns+L5cd4RsOJfl+43z5pvieT2ayq3C" crossorigin="anonymous"></script>
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.3/kakao.min.js"
+    integrity="sha384-kLbo2SvoNtOFiniJ1EQ9o2iDA8i3xp+O6Cns+L5cd4RsOJfl+43z5pvieT2ayq3C"
+    crossorigin="anonymous"></script>
   <script src="essentialData.js"></script>
-  
+
   <div class="loader-overlay" id="loader">
     <div class="loader"></div>
-  </div> 
-  
+  </div>
+
 </body>
+
 </html>

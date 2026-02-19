@@ -107,7 +107,6 @@ const modalClose = (name, termChk) => {
 };
 
 termCheck.forEach((item, index) => {
-
   
   item.addEventListener("click", (event) => {
     // console.log(item);
@@ -155,3 +154,25 @@ function isMobile() {
 //   });
 // }
 
+
+const video = document.getElementById("interactiveVideo");
+
+if (video) {
+  let isReplayEnabled = false;
+
+  // 영상 끝났을 때
+  video.addEventListener("ended", () => {
+    isReplayEnabled = true;
+
+    console.log('end');
+  });
+
+  // 클릭하면 다시 재생
+  video.addEventListener("click", () => {
+    if (isReplayEnabled) {
+      video.currentTime = 0;
+      video.play();
+      isReplayEnabled = false;
+    }
+  });
+}
