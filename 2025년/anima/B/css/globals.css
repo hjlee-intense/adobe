@@ -1,0 +1,26 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/67f69efcd46516ac8cb202fa.67f69efcd46516ac8cb202fd.ucu2rLu.hcp.png");
+
+@font-face {
+  font-family: "Paperlogy-7Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Paperlogy-7Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Pretendard-Regular.otf") format("opentype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
