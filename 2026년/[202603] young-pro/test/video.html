@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background Layout</title>
+    <style>
+        /* 1. 배경을 검은색으로 설정하고 전체 화면 중앙 정렬 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 2. 기본 설정: PC 해상도 고정 */
+        video {
+            width: 1280px;
+            height: 720px;
+            display: block;
+        }
+
+        /* 3. 모바일 설정: 가로가 1280px보다 작아질 때 대응 */
+        @media (max-width: 1280px) {
+            video {
+                width: 100%;  /* 가로 꽉 차게 */
+                height: auto; /* 비율 유지 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="test1270_720.mp4" type="video/mp4">
+            해당 브라우저는 비디오 태그를 지원하지 않습니다.
+        </video>
+    </div>
+
+</body>
+</html>
