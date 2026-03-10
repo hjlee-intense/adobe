@@ -1,0 +1,71 @@
+:root { 
+  --caribbean-green-pearl: #67e894;
+  --chetwode-blue: #7e90d6;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --mainprimary: #000000;
+  --rose: #ff4d4d;
+ 
+  --font-size-l: 12px;
+  --font-size-m: 10px;
+  --font-size-xl: 14px;
+  --font-size-xxl: 16px;
+  --font-size-xxxl: 20px;
+  --font-size-xxxxl: 40px;
+  --font-size-xxxxxl: 48px;
+ 
+  --font-family-paperlogy-4regular: "Paperlogy-4Regular", Helvetica;
+  --font-family-paperlogy-7bold: "Paperlogy-7Bold", Helvetica;
+  --font-family-paperlogy-8extrabold: "Paperlogy-8ExtraBold", Helvetica;
+  --font-family-paperlogy-bold: "Paperlogy-Bold", Helvetica;
+  --font-family-paperlogy-regular: "Paperlogy-Regular", Helvetica;
+  --font-family-pretendard-regular: "Pretendard-Regular", Helvetica;
+  --font-family-sandoll_nemony2_ttf-02bs_lt: "Sandoll Nemony2 TTF-02Bs Lt", Helvetica;
+}
+.paperlogy-bold-caribbean-green-pearl-48px {
+  color: var(--caribbean-green-pearl);
+  font-family: var(--font-family-paperlogy-bold);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.paperlogy-bold-white-40px {
+  color: var(--color-white);
+  font-family: var(--font-family-paperlogy-bold);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.pretendard-regular-normal-white-14px {
+  color: var(--color-white);
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.paperlogy-bold-rose-48px {
+  color: var(--rose);
+  font-family: var(--font-family-paperlogy-bold);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.paperlogy-7-bold-white-14px {
+  color: var(--color-white);
+  font-family: var(--font-family-paperlogy-7bold);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.paperlogy-regular-normal-white-10px {
+  color: var(--color-white);
+  font-family: var(--font-family-paperlogy-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}

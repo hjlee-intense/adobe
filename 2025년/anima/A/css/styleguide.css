@@ -1,0 +1,88 @@
+:root { 
+  --caribbean-green-pearl: #67e894;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --mainprimary: #000000;
+  --negroni: #ffe0c2;
+  --rose: #ff4d4d;
+  --zuccini: #053d1f;
+ 
+  --font-size-l: 16px;
+  --font-size-m: 14px;
+  --font-size-s: 12px;
+  --font-size-xl: 20px;
+  --font-size-xs: 11px;
+  --font-size-xxl: 27px;
+  --font-size-xxxl: 43px;
+ 
+  --font-family-pretendard-regular: "Pretendard-Regular", Helvetica;
+  --font-family-pretendard-semibold: "Pretendard-SemiBold", Helvetica;
+  --font-family-sandoll_nemony2_ttf-01bs_th: "Sandoll Nemony2 TTF-01Bs Th", Helvetica;
+  --font-family-sandoll_nemony2_ttf-02bs_lt: "Sandoll Nemony2 TTF-02Bs Lt", Helvetica;
+  --font-family-sandoll_nemony2_ttf-03bs_rg: "Sandoll Nemony2 TTF-03Bs Rg", Helvetica;
+  --font-family-sandoll_nemony2_ttf-04bs_bd: "Sandoll Nemony2 TTF-04Bs Bd", Helvetica;
+  --font-family-sandoll_nemony2_ttf-05bs_hv: "Sandoll Nemony2 TTF-05Bs Hv", Helvetica;
+  --font-family-sandoll_nemony2_ttf-regular: "Sandoll Nemony2 TTF-Regular", Helvetica;
+}
+.sandollnemony2ttf-regular-normal-caribbean-green-pearl-43px {
+  color: var(--caribbean-green-pearl);
+  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendard-regular-normal-white-14px {
+  color: var(--color-white);
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sandollnemony2ttf-regular-normal-white-14px {
+  color: var(--color-white);
+  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sandollnemony2ttf-regular-normal-rose-43px {
+  color: var(--rose);
+  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sandollnemony2ttf-regular-normal-white-16px {
+  color: var(--color-white);
+  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendard-semi-bold-zuccini-12px {
+  color: var(--zuccini);
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sandollnemony2ttf-regular-normal-white-14px-2 {
+  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sandollnemony2ttf-regular-normal-negroni-14px {
+  color: var(--negroni);
+  font-family: var(--font-family-sandoll_nemony2_ttf-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
