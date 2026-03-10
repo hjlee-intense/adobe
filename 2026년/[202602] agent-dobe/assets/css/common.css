@@ -21,6 +21,12 @@ button {
 .mo {
   display: block !important;
 }
+.mo-break {
+  display:block;
+}
+.keep {
+  white-space: nowrap;
+}
 
 .pc {
   display: none !important;
@@ -61,13 +67,43 @@ button {
   background-image: url(../image/icon_checkbox_on.png);
 }
 
+
+/* =====================================================
+   VISUAL
+===================================================== */
+/* #region VISUAL */
+
+/* ------- MOBILE ------- */
 .visual {
-  background-position: 0 bottom;
-  background-size: 100% auto;
+  background-color: #2E60FF;
 }
 .visual img {
   width:100%;
+  aspect-ratio: 375 / 725;
 }
+
+/* ------- PC(768+) ----- */
+@media (min-width: 768px) {  
+
+  .visual {
+    width:100%;
+  }
+  .visual img {
+    max-width:1920px;
+    margin:0 auto;    
+    aspect-ratio: 1920 / 690;
+    height: auto;
+    display: block;
+  }
+}
+/* #endregion VISUAL */
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+
 
 .content {  
   /* padding: 38px 15px 78px 15px; */
@@ -110,49 +146,19 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.intro .btn-area,
-.outro .btn-area {
-  position: absolute;  
-  top: calc(50% + 45vw);
-  left:50%;
-  transform: translate(-50%, -50%);
-  margin-top:0;
-}
-.intro .btn-area button,
-.outro .btn-area button {
-  font-size:15.183px;
-  font-weight: 700;
-  width:51.733vw;
-  height:13.496vw;
-}
-.intro.no .btn-area {
-  top: calc(50% + 64vw);
-}
-
-
-.outro .video-container video {
-  top:calc(50% - 13vw);
-}
-.outro .btn-area {
-  display:flex;
-  flex-direction: column;
-  gap:12px;
-}
-
-.outro .btn-area {
-  top: calc(50% + 45vw);
-}
-.outro .btn-area button:last-child {
-  background-color:#000;
-  border:1px solid #fff;
-}
-
-
 .tit {
   font-size: 5.3333vw;
   font-weight: 700;
   letter-spacing: -0.2667vw;
 }
+
+
+
+
+/* =====================================================
+   3-STEP
+===================================================== */
+/* #region 3-STEP */
 
 .step {
   display: flex;
@@ -160,12 +166,9 @@ button {
   margin-top: 5.3333vw;
   margin-bottom: 6.666vw;
 }
-
 .step > div {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;  
   align-items: center;
   text-align: center;
   width: 32%;
@@ -191,10 +194,6 @@ button {
   font-size: 3.2vw;
 }
 
-/* .step p + p span {
-  color: #3b63fb;
-} */
-
 .step p + p em,
 .step .center p em {
   display: block;
@@ -204,7 +203,6 @@ button {
   line-height:130%;
 
 }
-
 .step p + p + p, 
 .step .center p.selectFile {
   margin: 1.3333vw 0 5.3333vw;
@@ -216,7 +214,7 @@ button {
 
 .step button,
 .step .input-file {
-  /* display: inline-block; */
+  
   display:flex;
   align-items: center;
   justify-content: center;
@@ -225,17 +223,13 @@ button {
   width: 71%;
   height: 8vw;
   border: 1px solid #000;
-  border-radius: 13.3333vw;
+  border-radius: 9999px;
   font-size: 3.2vw;
   color: #000;
 }
 
 .step .input-file {
   position: relative;
-}
-
-.step .input-file label {
-  /* line-height: 7vw; */
 }
 
 .step label + input[type="file"] {
@@ -247,6 +241,9 @@ button {
   opacity: 0;
   cursor: pointer;
 }
+
+/* #endregion 3-STEP */
+
 .check-group {
   display: grid;
   grid-template-columns: 33% 67%;
@@ -479,6 +476,24 @@ button {
   color: #fff;
   background: #3b63fb;
 }
+.btn-area button.btn-kakao {
+  color:#000;
+  background: #fff;
+  border:1px solid #000;
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:12px;
+}
+.btn-area button.btn-kakao::before {
+  content:'';  
+  display:inline-block;
+  width:38px;
+  height:38px;  
+  background: url(../image/icon-kakao.png) no-repeat center;
+  background-size: contain;
+}
 
 footer {
   /* position: fixed;
@@ -557,18 +572,375 @@ footer div a:first-child::before{
   background-size: 100% 100%;
 }
 
+
+/* =====================================================
+   POPUP - EXAMPLE
+===================================================== */
+/* #region EXAMPLE */
+
 #example .modal-cont > div {
-  overflow-y:auto;
   max-height:80%;
 }
-#example .modal-cont > div .close {
-  position:fixed;
-  top: 7.7333vw;
-  right:4vw;
+
+/* 예시 이미지 팝업 */
+#example .noti {
+  margin-top: 1.3333vw;   /* 5px */
+  font-size: 1rem;
+  font-weight: 500;
+  color: #eb1000;
+  text-align: center;
+  letter-spacing: -0.2133vw;
 }
 
+#example .modal-cont > div {
+  padding:  10.667vw 5.333vw; /* 40px 20px */
+}
+
+#example .img {
+  margin-top: 8vw;
+}
+
+#example .img img {
+  width: 100%;
+  /* margin-bottom: 7.784vw; */
+}
+
+#example .btn {
+  margin-top: 8vw;
+}
+
+#example .btn button{
+  font-size: 1.25rem;
+  margin-bottom:1.3333vw;
+}
+#example .btn button.firefly {
+  background-color: #fff;
+  color:#000;
+  border:1px solid #000;
+}
+
+
+#exampleImg::before {
+ background: rgba(0, 0, 0); 
+}
+
+#exampleImg .modal-cont > div {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+}
+#exampleImg .modal-cont > div img{
+  width: 100%;
+}
+
+#exampleImg .modal-cont > div .close {
+  right: 4.6875vw;
+}
+
+
+@media screen and (min-width: 768px) {
+  /* 예시 이미지 팝업 */
+  #example .modal-cont > div {
+    width: 1200px;
+    padding:0;
+    /* padding: 46px 106px 46px 106px; */
+  }
+  /* #example .modal-scroll-area {
+    max-height: 65vh; 
+    overflow-y: auto; 
+  } */
+  #example .pop-tit {
+    text-align: left;
+  }
+  #example .noti {
+    text-align: left;
+    font-size:22px;
+  }
+
+  #example .img {
+    display: flex;
+    justify-content: center;  
+    margin-top: 50px;
+    margin-bottom: 4px;
+  }
+  #example .img img {
+    /* width:36.937%; */
+    margin-right:51px;
+    margin-bottom:0;
+  }
+  #example .img img:last-child {
+    margin-right: 0;
+  }
+
+  #example .btn {
+    position: absolute;
+    top:59px;
+    right:106px;
+    margin-top:unset;
+  }
+
+  #example .btn button {
+    width: 225px;
+    height: 65px;
+    line-height:26px;
+    border-radius: 60px;
+    font-size: 23px;
+    letter-spacing:-1.15px;
+    text-align:center;
+    margin-bottom:0;
+  }
+  
+  #example .btn button.firefly {
+    width:235px;
+    border:2px solid #000;
+    margin-left: 15px;    
+  }
+
+  #example .modal-cont > div {
+    overflow-y:unset;
+    height:100%;
+  }
+  #example .modal-cont > div > div {
+    overflow-y:auto; height:100%;
+    padding:46px 106px 46px 106px;
+    position: relative;
+  }
+
+  #example .modal-cont > div .close {
+    position: absolute; 
+    top: -56px;
+    right: 0;
+  }
+}
+
+/* #endregion EXAMPLE */
+
+/* =====================================================
+   POPUP - COMPLETE
+===================================================== */
+/* #region COMPLETE */
+
+/* 참여 완료 */
+#complete .modal-cont > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100dvh;
+  padding: 0 4vw;
+}
+
+#complete .modal-cont > div .close {
+  top: 6.4vw;
+  right: 4vw;
+  background-image: url(../image/pop_close2.png);
+}
+
+#complete .pop-tit {  
+  font-size: 2.1875rem;
+  font-weight: 700;
+  line-height: 41px; /* 136.667% */
+  letter-spacing: -1.5px;
+  margin:20px 0;
+}
+
+#complete p {
+  width: 100%;
+  text-align: center;
+  font-size: 1.125rem;  
+  margin-bottom:110px;
+}
+#complete .img {
+  width:100%;
+}
+#complete img {
+  width:72.533vw;
+  margin-top:4.53vw;  /* 17px */
+}
+#complete .txt1 {
+  /* margin-top: 3.125vw; */
+  margin-top: 5.3333vw;
+  font-size: 4.8vw;
+  font-weight: 300;
+}
+#complete .txt1 span {
+  font-weight: 700;
+}
+
+#complete .btn {
+  width: 100%;
+  margin-top:23.73vw;
+}
+#complete .btn button {
+ height: 64px; 
+ border-radius: 9999px;
+
+}
+#complete .btn-area {
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+#complete .btn-area button {
+  width:92vw;
+  font-weight: 500;
+}
+#complete .btn button.btn-close {
+  background-color: #fff;
+  color:#000;
+  border:1px solid #000;
+  margin-top:5.333vw;
+}
+
+#complete .info {
+  margin-top: 5.3333vw;
+  padding: 0 8vw;
+  font-size: 3.7333vw;
+  color: #666;
+  text-align: left;
+}
+
+#complete .info span {
+  position: relative;
+  display: block;
+  padding-left: 2.6667vw;
+}
+
+#complete .info span::before {
+  content: "";
+  position: absolute;
+  top: 2.6667vw;
+  left: 0;
+  width: 0.5333vw;
+  height: 0.5333vw;
+  border-radius: 50%;
+  background: #666;
+}
+
+#complete .check {
+  margin-top: 4.6875vw;
+  text-align: center;
+}
+
+#complete .check a span{
+  display: inline-block;
+  padding-right: 5.625vw;
+  border-bottom: 1px solid #000;
+  font-size: 5.625vw;
+  color: #000;
+  font-weight: 300;
+  background: url(../image/bg_check.png) no-repeat right center;
+  background-size: 3.75vw 3.125vw;
+}
+
+@media screen and (min-width: 768px) {
+  /* 참여 완료 */
+  #complete .modal-cont > div {
+    height: 100vh;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  #complete .modal-cont > div .close {
+    top: 40px;
+    right: 40px;
+  }
+
+  #complete .modal-cont > div > div {
+    text-align: center;
+  }
+
+  #complete .pop-tit {
+    font-size: 50px;
+    text-align: center;    
+    margin:10px 0 32px 0;
+  }
+  #complete p {
+    margin-bottom: 35px;
+  }
+  #complete img {
+    width: 328px;
+    height :211px;
+    margin-top:16px;
+    margin-bottom:30px;
+  }  
+  #complete .txt1 {
+    /* margin-top: 38px; */
+    margin-top:0;
+    margin-bottom:54px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 350;
+    letter-spacing: -0.9px;
+    text-align:center ;
+  }
+
+  #complete .btn-area {
+    flex-direction: row;
+    margin-top: 29px;
+    text-align: left;
+  }
+
+  #complete .btn-area button {
+    width: 295px;
+    height: 64px;
+    border-radius: 60px;
+    margin-right:18px;
+    margin-bottom:0;
+  }
+  #complete .btn button:last-child {
+    margin-right:0;
+    margin-top:0;
+  }
+
+  #complete .btn span {
+    padding-right: 27px;
+    /* background: url(../image/ico_down.png) no-repeat; */
+    background-position: right 0 center;
+    background-size: 17px 17px;
+  }
+
+  #complete .info {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  #complete .info span {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+  }
+
+  #complete .info span::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 2px;
+    height: 2px;
+  }
+
+  #complete .check {
+    margin-top: 40px;
+    text-align: right;
+  }
+  
+  #complete .check a span{
+    padding-right: 18px;
+    font-size: 18px;
+    background-size: 12px 10px;
+  }
+}
+
+
+/* #endregion COMPLETE */
+
+
 .modal-pop .modal-cont > div .pop-tit {
-  font-size: 5.3333vw;
+  font-size: 1.25rem;   /* 20px */
   font-weight: 700;
   text-align: center;
   letter-spacing: -0.2667vw;
@@ -597,47 +969,6 @@ footer div a:first-child::before{
   margin:0;
 }
 
-#already-completed .modal-cont > div {
-  display:flex;
-  flex-direction: column;
-  gap:30px;
-  aspect-ratio: 345 / 522;  
-  justify-content: center;
-  padding: 22.66vw 5.333vw;
-}
-#already-completed p {
-  font-family: "AdobeCleanHanK";
-  font-size: 27px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 129.63%;
-  letter-spacing: -1.35px;
-  text-align: center;
-}
-#already-completed  img {
-  width:45.8vw;
-  margin:0 auto;
-}
-#already-completed  .btn-area {
-  margin-top:0;
-  display:flex;
-  flex-direction: column;  
-  gap:17px;
-  margin:0 auto;
-  margin-top:20px;
-  width:81.3vw;
-}
-#already-completed .btn-area button {
-  width:100%;
-  aspect-ratio: 305 / 56;
-  height: unset;
-  font-size:4.266vw;
-}
-#already-completed .btn-area button:last-child {
-  background-color:transparent;
-  color:#000;
-  border:1px solid #000;
-}
 
 #status-modal .modal-cont > div {
   background-image:url('../image/status-modal-bg.png');
@@ -646,36 +977,6 @@ footer div a:first-child::before{
   padding:0;
 
 }
-.stamps {
-  position: relative;
-  top:37.33vw;
-  left: 14.6vw;
-}
-.stamp {
-  width: 18.4vw;
-  height: 20.4vw;
-  position: absolute;
-}
-.stamp.complete {
-  background-image:url('../image/mission-complete-stamp.png');
-  background-size: contain;
-}
-.stamp.special {
-  background-image:url('../image/special-mission-stamp.png');
-  background-size: contain;
-}
-.stamp02 { position: absolute; top:0; left:0; }
-.stamp03 { position: absolute; top:0; left:22.5vw; }
-.stamp04 { position: absolute; top:0; left:45vw; }
-.stamp05 { position: absolute; top:24vw; left:45vw; }
-.stamp06 { position: absolute; top:24vw; left:22.5vw; }
-.stamp07 { position: absolute; top:24vw; left:0; }
-.stamp08 { position: absolute; top:47.5vw; left:0; }
-.stamp09 { position: absolute; top:47.5vw; left:22.5vw; }
-.stamp10 { position: absolute; top:47.5vw; left:45vw; }
-.stamp11 { position: absolute; top:71vw; left:34vw; }
-
-
 /* 모바일 화면 전용: 버튼 너비 80% + 중앙 정렬 */
 @media screen and (max-width: 768px) {
   .modal-pop .modal-cont > div .btn {
@@ -687,43 +988,6 @@ footer div a:first-child::before{
   .modal-pop .modal-cont > div .btn button {
     width: 75%; /* 버튼 너비 축소 */
   }
-}
-
-/* 예시 이미지 팝업 */
-#example .noti {
-  margin-top: 1.3333vw;
-  font-size: 4.2667vw;
-  font-weight: 500;
-  color: #eb1000;
-  text-align: center;
-  letter-spacing: -0.2133vw;
-}
-
-#example .modal-cont > div {
-  padding:10.6667vw 5.3333vw 9.25vw 5.3333vw;
-}
-
-#example .img {
-  margin-top: 8vw;
-}
-
-#example .img img {
-  width: 100%;
-  margin-bottom: 7.784vw;
-}
-
-#example .btn {
-  margin-top: 8vw;
-}
-
-#example .btn button{
-  font-size: 5.3333vw;
-  margin-bottom:1.3333vw;
-}
-#example .btn button.firefly {
-  background-color: #fff;
-  color:#000;
-  border:1px solid #000;
 }
 
 
@@ -745,8 +1009,9 @@ footer div a:first-child::before{
   color: #333;
   letter-spacing: -0.1867vw;
   overflow-y: auto;
-  white-space: normal;
-  word-break: keep-all;
+  /* white-space: normal; */
+  white-space: pre-line;
+  word-break: normal;
   overflow: break-word;
 }
 
@@ -802,124 +1067,8 @@ footer div a:first-child::before{
   color: #ff0000;
 }
 
-/* 참여 완료 */
-#complete .modal-cont > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100dvh;
-  padding: 0 4vw;
-}
 
-#complete .modal-cont > div .close {
-  top: 6.4vw;
-  right: 4vw;
-  background-image: url(../image/pop_close2.png);
-}
 
-#complete .pop-tit {  
-  font-size:30px;
-  font-weight: 700;
-  line-height: 41px; /* 136.667% */
-  letter-spacing: -1.5px;
-}
-
-#complete p {
-  width: 100%;
-  text-align: center;
-}
-#complete .img {
-  width:100%;
-}
-#complete img {
-  width:82vw;
-  margin-top:4.53vw;  /* 17px */
-}
-#complete .txt1 {
-  /* margin-top: 3.125vw; */
-  margin-top: 5.3333vw;
-  font-size: 4.8vw;
-  font-weight: 300;
-}
-#complete .txt1 span {
-  font-weight: 700;
-}
-
-#complete .btn {
-  width: 100%;
-  margin-top:23.73vw;
-}
-#complete .btn button {
- height: 64px; 
- border-radius: 9999px;
-}
-#complete .btn button.btn-close {
-  background-color: #fff;
-  color:#000;
-  border:1px solid #000;
-  margin-top:5.333vw;
-}
-
-#complete .info {
-  margin-top: 5.3333vw;
-  padding: 0 8vw;
-  font-size: 3.7333vw;
-  color: #666;
-  text-align: left;
-}
-
-#complete .info span {
-  position: relative;
-  display: block;
-  padding-left: 2.6667vw;
-}
-
-#complete .info span::before {
-  content: "";
-  position: absolute;
-  top: 2.6667vw;
-  left: 0;
-  width: 0.5333vw;
-  height: 0.5333vw;
-  border-radius: 50%;
-  background: #666;
-}
-
-#complete .check {
-  margin-top: 4.6875vw;
-  text-align: center;
-}
-
-#complete .check a span{
-  display: inline-block;
-  padding-right: 5.625vw;
-  border-bottom: 1px solid #000;
-  font-size: 5.625vw;
-  color: #000;
-  font-weight: 300;
-  background: url(../image/bg_check.png) no-repeat right center;
-  background-size: 3.75vw 3.125vw;
-}
-
-#exampleImg::before {
- background: rgba(0, 0, 0); 
-}
-
-#exampleImg .modal-cont > div {
-  width: 100%;
-  padding: 0;
-  background: transparent;
-}
-#exampleImg .modal-cont > div img{
-  width: 100%;
-}
-
-#exampleImg .modal-cont > div .close {
-  right: 4.6875vw;
-}
 
 /* ---------------------------------------------------------------------------- */
 /* pc web */
@@ -931,6 +1080,9 @@ footer div a:first-child::before{
 
   .mo {
     display: none !important;
+  }
+  .mo-break {
+    display:none;
   }
 
   .pc {
@@ -953,24 +1105,6 @@ footer div a:first-child::before{
     background-size: 100% 100%;
   }
 
-  .visual {
-    display: flex;
-    justify-content: center;    
-    margin:0 auto;
-    /* height: 559px;         */
-    background-color: #341208;
-  }
-
-  .visual .pc {
-    max-width: 1122px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .visual .pc img {
-  width: 100%;
-  height: auto;
-  display: block;
-  }
 
   .intro {
     width:100%;
@@ -1324,65 +1458,7 @@ footer div a:first-child::before{
     font-weight: 500;
   }
 
-  /* 예시 이미지 팝업 */
-  #example .modal-cont > div {
-    width: 1200px;
-    padding: 74px 45px 54px 45px;
-  }
-
- #example .modal-scroll-area {
-  max-height: 65vh; 
-  overflow-y: auto; 
-  }
-
-  #example .pop-tit {
-    text-align: center;
-  }
-
-  #example .img {
-    display: flex;
-    justify-content: center;  
-    margin-top: 60px;
-    margin-bottom: 4px;
-  }
-  #example .img img {
-    width:36.937%;
-    margin-right:51px;
-    margin-bottom:0;
-  }
-  #example .img img:last-child {
-    margin-right: 0;
-  }
-
-  #example .btn {
-    margin-top: 30px;
-  }
-
-  #example .btn button {
-    width: 225px;
-    height: 65px;
-    line-height:26px;
-    border-radius: 60px;
-    font-size: 23px;
-    letter-spacing:-1.15px;
-    text-align:center;
-    margin-bottom:0;
-  }
   
-  #example .btn button.firefly {
-    width:235px;
-    border:2px solid #000;
-    margin-left: 15px;    
-  }
-
-  #example .modal-cont > div {
-    overflow-y:unset;
-  }
-  #example .modal-cont > div .close {
-    position: absolute; 
-    top: -56px;
-    right: 0;
-  }
 
   /* 약관 팝업 */
   #terms-view1 .terms-box,
@@ -1406,25 +1482,6 @@ footer div a:first-child::before{
     font-size: 18px;
   }
 
-  #already-completed .modal-cont > div {
-    width: 580px;
-    height: 670px;
-    padding:120px 115px 115px 115px;
-  }
-  #already-completed img {
-    width: 200px;
-  }
-  #already-completed p {
-    font-size: 37px;
-  }
-  #already-completed .btn-area {
-    width:345px; 
-    margin-top:40px;
-    gap: 20px;
-  }
-  #already-completed .btn-area button {
-    font-size:16px;
-  }
 
   .stamps {
     top: 204px;
@@ -1445,96 +1502,7 @@ footer div a:first-child::before{
   .stamp10 { position: absolute; top:257px; left:245px; }
   .stamp11 { position: absolute; top:385px; left:187px; }
 
-  /* 참여 완료 */
-  #complete .modal-cont > div {
-    height: 100vh;
-    padding: 0;
-  }
-
-  #complete .modal-cont > div .close {
-    top: 40px;
-    right: 40px;
-  }
-
-  #complete .modal-cont > div > div {
-    text-align: center;
-  }
-
-  #complete .pop-tit {
-    font-size: 30px;
-    text-align: center;    
-  }
-  #complete img {
-    width:387px;
-    height:110px;
-    margin-top:16px;
-    margin-bottom:30px;
-  }  
-  #complete .txt1 {
-    /* margin-top: 38px; */
-    margin-top:0;
-    margin-bottom:54px;
-    font-size: 18px;
-    color: #000;
-    font-weight: 350;
-    letter-spacing: -0.9px;
-    text-align:center ;
-  }
-
-  #complete .btn {
-    margin-top: 29px;
-    text-align: left;
-  }
-
-  #complete .btn button {
-    width: 295px;
-    height: 64px;
-    border-radius: 60px;
-    margin-right:18px;
-    margin-bottom:0;
-  }
-  #complete .btn button:last-child {
-    margin-right:0;
-    margin-top:0;
-  }
-
-  #complete .btn span {
-    padding-right: 27px;
-    /* background: url(../image/ico_down.png) no-repeat; */
-    background-position: right 0 center;
-    background-size: 17px 17px;
-  }
-
-  #complete .info {
-    margin-top: 20px;
-    padding: 0;
-    font-size: 16px;
-  }
-
-  #complete .info span {
-    position: relative;
-    display: block;
-    padding-left: 10px;
-  }
-
-  #complete .info span::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    width: 2px;
-    height: 2px;
-  }
-
-  #complete .check {
-    margin-top: 40px;
-    text-align: right;
-  }
   
-  #complete .check a span{
-    padding-right: 18px;
-    font-size: 18px;
-    background-size: 12px 10px;
-  }
 }
 
 /* video section */
